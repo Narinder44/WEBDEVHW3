@@ -1,0 +1,154 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f5e6d3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #f5e6d3;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 150px 40px;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 150px 40px;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.delete-btn:hover {
+    color: #333;
+}
+
+.add-row {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.add-row:hover {
+    background-color: #f0f0f0;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.calculate-btn {
+    padding: 12px 24px;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reset-btn {
+    padding: 12px 24px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.gpa-result {
+    margin-top: 20px;
+}
+
+.gpa-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gpa-value {
+    font-size: 24px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.error-banner {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 6px;
+    display: none;
+}
+
+.calculate-btn:hover {
+    background-color: #004d00;
+}
+
+.reset-btn:hover {
+    background-color: #4d4d4d;
+}
+
+/* Add some transition effects */
+.calculate-btn,
+.reset-btn,
+.add-row,
+.delete-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Disabled state styling */
+input:disabled,
+select:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
